@@ -1,5 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asimovian&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Story+Script&display=swap');
 
-.my-heading {
-  font-family: 'Poppins', sans-serif;
+.story-script-regular {
+  font-family: "Story Script", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
+
+.edu-nsw-act-cursive {
+  font-family: "Edu NSW ACT Cursive", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
