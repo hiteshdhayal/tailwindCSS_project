@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwind project</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        
+    
+</head>
+<body class="bg-gradient-to-r from-slate-900 via-gray-700 to-gray-900">
+   <nav class="flex justify-between bg-gray-900  text-white">
+    <img src="./logo.jpg" alt="" class="h-10 w-10 ">
+  <a href="#" class=" p-2">Home</a>
+  <a href="#" class=" p-2">About</a>
+  <a href="#" class=" p-2">Services</a>
+  <a href="#" class=" p-2">Contact</a>
+</nav>
+
+<div class="container mx-auto">
+   <h1 id="my-heading" class=" text-8xl font-bold flex justify-center text-white py-20 ">
+  
+</h1> 
+    <img src="./body image.jpg" alt="" class=" flex justify-center mx-auto border-2 border-white shadow-lg rounded-lg">
+    <p class="text-2xl text-white flex justify-center mt-4">This is a simple project to demonstrate the utility-first CSS framework.</p>
+    <!-- form -->
+    <form action="/search" method="GET" class="col-1 max-w-md mx-auto space-y-2 py-5">
+  <input 
+    type="search" 
+    name="q" 
+    placeholder="Search..."
+    class="w-full px-4 py-2 rounded-lg border-3 border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+  >
+  <button 
+    type="submit" 
+    class="center py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 w-30"
+  >
+    Search
+  </button>
+</form>
+
+
+</div>
+
+</body>
+
+<script>
+const text = "Your own Tailwind Library";
+const typingElement = document.getElementById("my-heading");
+
+let index = 0;
+
+function typeEffect() {
+  if (index < text.length) {
+    typingElement.textContent += text.charAt(index);
+    index++;
+    setTimeout(typeEffect, 100); // speed in ms (100ms = slower typing)
+  }
+}
+
+typeEffect();
+</script>
+</html>
